@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/backgound_color">
+
+
+	<android.support.v7.widget.AppCompatImageView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/imageView"
+		android:src="@drawable/digilavita"
+		android:scaleType="centerCrop"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<Button
+		android:text="Bevestigen"
+		android:layout_marginBottom="320dp"
+		android:layout_width="wrap_content"
+		android:layout_height="50dp"
+		android:id="@+id/confirmFilling"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintVertical_bias="0.087"
+		android:backgroundTint="#B60609"
+		android:textColor="#FFFFFF"
+		app:layout_constraintHorizontal_bias="0.498" />
+
+	<EditText
+		android:layout_marginTop="260dp"
+		android:layout_marginBottom="40dp"
+		android:layout_width="320dp"
+		android:layout_height="50dp"
+		android:inputType="textPersonName"
+		android:ems="10"
+		android:id="@+id/codeFilling"
+		android:hint="Code invullen"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintHorizontal_bias="0.513"
+		android:textColor="#000000"
+		app:layout_constraintBottom_toTopOf="@+id/confirmFilling"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.868" />
+</android.support.constraint.ConstraintLayout>
