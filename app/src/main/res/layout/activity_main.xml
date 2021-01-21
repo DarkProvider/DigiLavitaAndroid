@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:tools="http://schemas.android.com/tools"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:layout_width="match_parent"
@@ -13,9 +12,10 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/imageView"
-		android:src="@drawable/digilavita"
+		android:src="@drawable/ic_digilavitasvg1"
 		android:scaleType="centerCrop"
-		app:layout_constraintEnd_toEndOf="parent" />
+		app:layout_constraintEnd_toEndOf="parent"
+		tools:layout_editor_absoluteY="0dp" />
 
 	<EditText
 		android:layout_width="320dp"
@@ -25,25 +25,25 @@
 		android:id="@+id/employeeNumber1"
 		android:hint="Medewerkernummer"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.868"
+		app:layout_constraintVertical_bias="0.931"
 		app:layout_constraintBottom_toTopOf="@+id/currentPassword"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.504" />
+		app:layout_constraintHorizontal_bias="0.505" />
 
 	<Button
 		android:layout_width="wrap_content"
 		android:layout_height="50dp"
 		android:id="@+id/loginButton"
-		android:text="Login"
-		app:layout_constraintStart_toEndOf="@+id/resetForgottenPass"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.415"
+		android:text="Inloggen"
 		android:textColor="#B60609"
 		android:backgroundTint="#FFFFFF"
-		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.858"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.531" />
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintVertical_bias="0.632" />
 
 	<EditText
 		android:layout_width="320dp"
@@ -57,21 +57,83 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintHorizontal_bias="0.504"
-		app:layout_constraintVertical_bias="0.396" />
+		app:layout_constraintHorizontal_bias="0.505"
+		app:layout_constraintVertical_bias="0.51" />
 
 	<Button
 		android:text="@string/wachtwoord_vergeten"
-		android:layout_width="200dp"
+		android:layout_width="wrap_content"
 		android:layout_height="50dp"
 		android:id="@+id/resetForgottenPass"
-		app:layout_constraintBottom_toBottomOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintVertical_bias="0.117"
-		app:layout_constraintEnd_toEndOf="parent"
 		android:backgroundTint="#B60609"
 		android:textColor="#FFFFFF"
-		app:layout_constraintHorizontal_bias="0.218"
-		app:layout_constraintTop_toBottomOf="@+id/currentPassword" />
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintVertical_bias="0.631"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.213" />
+
+	<com.github.florent37.shapeofview.shapes.CircleView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:elevation="4dp"
+		app:shape_roundRect_bottomLeftRadius="10dp"
+		app:shape_roundRect_bottomRightRadius="10dp"
+		app:shape_roundRect_topLeftRadius="10dp"
+		app:shape_roundRect_topRightRadius="10dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintStart_toStartOf="@+id/imageView"
+		app:layout_constraintHorizontal_bias="0.946"
+		app:layout_constraintVertical_bias="0.046">
+
+
+		<ImageView
+			android:id="@+id/logo2"
+			android:src="@drawable/logo"
+			android:scaleType="centerCrop"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			tools:layout_editor_absoluteY="91dp"
+			tools:layout_editor_absoluteX="80dp"
+			/>
+	</com.github.florent37.shapeofview.shapes.CircleView>
+
+	<com.github.florent37.shapeofview.shapes.RoundRectView
+		android:layout_width="240dp"
+		android:layout_height="115dp"
+		android:elevation="1dp"
+		app:shape_roundRect_bottomLeftRadius="10dp"
+		app:shape_roundRect_bottomRightRadius="10dp"
+		app:shape_roundRect_topLeftRadius="10dp"
+		app:shape_roundRect_topRightRadius="10dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintHorizontal_bias="0.09"
+		app:layout_constraintVertical_bias="0.046">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#30000000"
+			/>
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fontFamily="@font/brush"
+			android:text="La Vita E Bella E-Waiter"
+			android:textSize="35dp"
+			android:textAlignment="textStart"
+			android:layout_margin="15dp"
+			android:textColor="@android:color/white"/>
+
+
+	</com.github.florent37.shapeofview.shapes.RoundRectView>
+
 
 </android.support.constraint.ConstraintLayout>

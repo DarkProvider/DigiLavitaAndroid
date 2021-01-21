@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
@@ -22,17 +21,15 @@
 		android:inputType="textEmailAddress"
 		android:ems="10"
 		android:id="@+id/employeeEmail"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintHorizontal_bias="0.495"
 		android:hint="Email"
-		app:layout_constraintBottom_toBottomOf="parent"
-		android:layout_marginBottom="404dp"
 		android:textColor="#000000"
-		app:layout_constraintVertical_bias="0.396" />
+		app:layout_constraintBottom_toBottomOf="@+id/imageView"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.555"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent" />
 
 	<EditText
-		android:layout_marginTop="200dp"
 		android:layout_width="320dp"
 		android:layout_height="50dp"
 		android:inputType="textPersonName"
@@ -45,21 +42,19 @@
 		android:textColor="#000000"
 		app:layout_constraintBottom_toTopOf="@+id/employeeEmail"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="0.0" />
+		app:layout_constraintVertical_bias="0.918" />
 
 	<Button
 		android:text="Code verzenden"
-		android:layout_marginBottom="320dp"
 		android:layout_width="wrap_content"
 		android:layout_height="50dp"
 		android:id="@+id/sendCode"
 		app:layout_constraintTop_toBottomOf="@+id/employeeEmail"
-		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintBottom_toBottomOf="@+id/imageView"
 		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintVertical_bias="1.0"
+		app:layout_constraintVertical_bias="0.101"
 		app:layout_constraintEnd_toEndOf="parent"
 		android:backgroundTint="#B60609"
-		android:textColor="#FFFFFF"
-		app:layout_constraintHorizontal_bias="0.498" />
+		android:textColor="#FFFFFF" />
 
 </android.support.constraint.ConstraintLayout>
