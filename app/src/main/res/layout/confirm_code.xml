@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
 	android:background="@drawable/backgound_color">
@@ -11,8 +11,22 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/imageView"
-		android:src="@drawable/digilavita"
+		android:src="@drawable/ic_digilavitasvg1"
 		android:scaleType="centerCrop"
+		app:layout_constraintEnd_toEndOf="parent"
+		tools:layout_editor_absoluteY="0dp" />
+
+	<EditText
+		android:layout_width="320dp"
+		android:layout_height="50dp"
+		android:inputType="textPersonName"
+		android:ems="10"
+		android:id="@+id/codeFilling"
+		android:hint="Code invullen"
+		android:textColor="#000000"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintBottom_toBottomOf="@+id/imageView"
+		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintEnd_toEndOf="parent" />
 
 	<Button
@@ -20,27 +34,71 @@
 		android:layout_width="wrap_content"
 		android:layout_height="50dp"
 		android:id="@+id/confirmFilling"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintBottom_toBottomOf="@+id/imageView"
-		app:layout_constraintStart_toStartOf="parent"
 		android:backgroundTint="#B60609"
 		android:textColor="#FFFFFF"
-		android:layout_marginBottom="340dp" />
-
-	<EditText
-		android:layout_marginTop="260dp"
-		android:layout_marginBottom="40dp"
-		android:layout_width="320dp"
-		android:layout_height="50dp"
-		android:inputType="textPersonName"
-		android:ems="10"
-		android:id="@+id/codeFilling"
-		android:hint="Code invullen"
-		app:layout_constraintEnd_toEndOf="parent"
-		app:layout_constraintStart_toStartOf="parent"
-		app:layout_constraintHorizontal_bias="0.494"
-		android:textColor="#000000"
-		app:layout_constraintBottom_toTopOf="@+id/confirmFilling"
+		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintTop_toTopOf="parent"
-		app:layout_constraintVertical_bias="1.0" />
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintHorizontal_bias="0.503"
+		app:layout_constraintVertical_bias="0.597" />
+
+	<com.github.florent37.shapeofview.shapes.CircleView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:elevation="4dp"
+		app:shape_roundRect_bottomLeftRadius="10dp"
+		app:shape_roundRect_bottomRightRadius="10dp"
+		app:shape_roundRect_topLeftRadius="10dp"
+		app:shape_roundRect_topRightRadius="10dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintStart_toStartOf="@+id/imageView"
+		app:layout_constraintHorizontal_bias="0.946"
+		app:layout_constraintVertical_bias="0.046">
+
+
+		<ImageView
+			android:id="@+id/logo2"
+			android:src="@drawable/logo"
+			android:scaleType="centerCrop"
+			android:layout_width="120dp"
+			android:layout_height="120dp"
+			tools:layout_editor_absoluteY="91dp"
+			tools:layout_editor_absoluteX="80dp" />
+	</com.github.florent37.shapeofview.shapes.CircleView>
+
+	<com.github.florent37.shapeofview.shapes.RoundRectView
+		android:layout_width="240dp"
+		android:layout_height="115dp"
+		android:elevation="1dp"
+		app:shape_roundRect_bottomLeftRadius="10dp"
+		app:shape_roundRect_bottomRightRadius="10dp"
+		app:shape_roundRect_topLeftRadius="10dp"
+		app:shape_roundRect_topRightRadius="10dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/imageView"
+		app:layout_constraintHorizontal_bias="0.09"
+		app:layout_constraintVertical_bias="0.046">
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#30000000" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fontFamily="@font/brush"
+			android:text="La Vita E Bella E-Waiter"
+			android:textSize="35dp"
+			android:textAlignment="textStart"
+			android:layout_margin="15dp"
+			android:textColor="@android:color/white" />
+
+
+	</com.github.florent37.shapeofview.shapes.RoundRectView>
 </android.support.constraint.ConstraintLayout>

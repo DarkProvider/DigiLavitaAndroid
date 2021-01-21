@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:app="http://schemas.android.com/apk/res-auto"
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	android:theme="@style/ThemeOverlay.AppCompat.Light"
-	>
+	xmlns:design="http://schemas.android.com/apk/res-auto"
+	android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+
 
 	<ScrollView
 		android:layout_width="match_parent"
@@ -14,12 +15,406 @@
 		app:layout_constraintBottom_toBottomOf="parent"
 		app:layout_constraintLeft_toLeftOf="parent"
 		app:layout_constraintRight_toRightOf="parent"
-		android:background="@drawable/orangesmall"
-		android:scaleType="centerCrop"
+		android:background="@drawable/ic_mainmenu6"
+		android:scaleType="centerCrop">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<RelativeLayout
+				android:layout_marginTop="32dp"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp">
+
+				<ImageView
+					android:layout_alignParentRight="true"
+					android:layout_width="38dp"
+					android:layout_height="38dp"
+					android:background="@drawable/notification1"
+					android:clickable="true"
+					android:id="@+id/notification"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+				</ImageView>
+
+				<com.github.florent37.shapeofview.shapes.RoundRectView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					app:shape_roundRect_borderWidth="2dp"
+					app:shape_roundRect_borderColor="@android:color/white"
+					android:elevation="4dp"
+					app:shape_roundRect_bottomLeftRadius="10dp"
+					app:shape_roundRect_bottomRightRadius="10dp"
+					app:shape_roundRect_topLeftRadius="10dp"
+					app:shape_roundRect_topRightRadius="10dp"
+					app:layout_constraintHorizontal_bias="0.09"
+					app:layout_constraintVertical_bias="0.050">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textSize="18dp"
+						android:textAlignment="center"
+						android:layout_margin="6.5dp"
+						android:text="Gerechten"
+						android:textColor="@android:color/white" />
 
 
+				</com.github.florent37.shapeofview.shapes.RoundRectView>
 
+			</RelativeLayout>
 
-		>
+			<GridLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:columnOrderPreserved="false"
+				android:alignmentMode="alignMargins"
+				android:rowCount="4"
+				android:columnCount="2"
+				android:layout_marginTop="60dp"
+				android:layout_marginBottom="80dp">
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/burgers"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/burgers"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Burgers"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/pizzas"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/pizzas"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Pizza's"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/broodjes"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/broodje"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Broodjes"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/salades"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/salads"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Salades"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/soepen"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/soeps"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Soepen"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/vlees"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/steak"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Vlees"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/zeevruchten"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+
+						<ImageView
+							android:src="@drawable/seafoods"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Zeevruchten"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+				<android.support.v7.widget.CardView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_columnWeight="1"
+					android:layout_rowWeight="1"
+					android:elevation="6dp"
+					app:cardCornerRadius="12dp"
+					android:layout_margin="12dp"
+					android:clickable="true"
+					android:id="@+id/drinken"
+					android:foreground="?attr/selectableItemBackgroundBorderless">
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:gravity="center"
+						android:padding="16dp"
+						android:orientation="vertical">
+						<ImageView
+							android:src="@drawable/drinks"
+							android:layout_width="100dp"
+							android:layout_height="100dp">
+						</ImageView>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Drinken"
+							android:textColor="#6f6f6f"
+							android:textSize="18dp"
+							android:layout_marginTop="12dp">
+						</TextView>
+
+					</LinearLayout>
+
+				</android.support.v7.widget.CardView>
+
+			</GridLayout>
+
+		</LinearLayout>
+
 	</ScrollView>
+
+	<com.github.florent37.shapeofview.shapes.RoundRectView
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:elevation="1dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+>
+
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="#B60609">
+		</ImageView>
+
+	</com.github.florent37.shapeofview.shapes.RoundRectView>
+
+	<android.support.design.widget.BottomNavigationView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/Navigation"
+		android:layout_gravity="bottom">
+
+	</android.support.design.widget.BottomNavigationView>
+
 </android.support.constraint.ConstraintLayout>
