@@ -2,10 +2,10 @@ package com.example.digilavita
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.confirm_code.*
-import kotlinx.android.synthetic.main.forgot_pass.*
-import kotlinx.android.synthetic.main.forgot_pass.sendCode
+
+
 
 class ConfirmCode: AppCompatActivity() {
 
@@ -18,5 +18,7 @@ class ConfirmCode: AppCompatActivity() {
 			startActivity(Intent(this, NewPassword::class.java))
 
 		}
+
+
 	}
 }
