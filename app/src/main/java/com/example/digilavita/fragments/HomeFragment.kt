@@ -6,6 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.digilavita.R
+import com.example.digilavita.disheslists.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,6 +26,56 @@ class HomeFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
+
+
+//		burgers.setOnClickListener{
+//			activity?.let {
+//				val intent = Intent(it, DishesBurgers::class.java)
+//				it.startActivity(intent)
+//			}
+//		}
+//
+
+
+//		pizzas.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DishesPizzas::class.java))
+//		}
+//
+//		zeevruchten.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DishesSeafood::class.java))
+//		}
+//
+//		vlees.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DishesMeat::class.java))
+//		}
+//
+//		soepen.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DishesSoups::class.java))
+//		}
+//
+//		drinken.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DrinksDrinks::class.java))
+//		}
+//
+//		broodjes.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DishesSandwiches::class.java))
+//		}
+//
+//		salades.setOnClickListener{
+//			//Login button calls for
+//			startActivity(Intent(this, DishesSalads::class.java))
+//		}
+
+
+
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
@@ -38,23 +90,7 @@ class HomeFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
+
+
+
 }

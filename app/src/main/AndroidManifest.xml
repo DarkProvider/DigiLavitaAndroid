@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	xmlns:dist="http://schemas.android.com/apk/distribution"
-	xmlns:tools="http://schemas.android.com/tools"
 	package="com.example.digilavita">
 
 	<dist:module dist:instant="true"/>
+
+	<uses-permission android:name="android.permission.INTERNET" />
 
 	<application
 		android:allowBackup="true"
@@ -26,7 +27,33 @@
 		<activity android:name=".NewPassword"
 			android:label="Nieuwe Wachtwoord Instellen"/>
 		<activity android:name=".MainMenu"
-			android:label="Gerechten"/>
+			android:label="@string/gerechten"/>
+		<activity android:name=".disheslists.DishesBurgers"
+			android:label="@string/burgers"/>
+		<activity android:name=".disheslists.DrinksDrinks"
+			android:label="@string/Drinken"/>
+		<activity android:name=".disheslists.DishesPizzas"
+			android:label="Pizza's"/>
+		<activity android:name=".disheslists.DishesSalads"
+			android:label="@string/salades"/>
+		<activity android:name=".disheslists.DishesSandwiches"
+			android:label="@string/broodjes"/>
+		<activity android:name=".disheslists.DishesSeafood"
+			android:label="@string/Seafood"/>
+		<activity android:name=".disheslists.DishesSoups"
+			android:label="@string/soepen"/>
+		<activity android:name=".disheslists.DishesMeat"
+			android:label="@string/Vlees"/>
+		<activity android:name=".foodoptions.BurgerOptions"
+			android:label="@string/burgers"/>
+		<activity android:name=".foodoptions.PizzaOptions"
+			android:label="Pizza's"/>
+		<activity android:name=".foodoptions.SandwichOptions"
+			android:label="@string/broodjes"/>
+		<activity android:name=".base.NotificationsCenter"
+			android:label="@string/meldingen"/>
+		<activity android:name=".base.PlacingOrders"
+			android:label="@string/bestellingen"/>
     </application>
 
 </manifest>

@@ -50,4 +50,18 @@
 	<string name="cheese_burger">Cheese Burger</string>
 	<string name="salade_sonoma">Salade Sonoma</string>
 	<string name="cordon_blue">Cordon Blue</string>
+	<string name="john_doe">John Doe</string>
+	<string name="pepperoni">Pepperoni</string>
+	<string name="vier_seizoenen">Vier Seizoenen</string>
+	<string name="bief_burger">Bief Burger</string>
+	<string name="Salade">Salade</string>
+	<string name="Seafood">Seafood</string>
+	<string name="roode_soep">Roode Soep</string>
+	<string name="tomaat_soep">Tomaat soep</string>
+	<string name="Tomaat_Soep">Tomaat Soep</string>
+	<string name="tomaten_soep">Tomaten Soep</string>
+	<string name="Drinken">Drinken</string>
+	<string name="pepsi">Pepsi</string>
+	<string name="coca_cola">Coca Cola</string>
+	<string name="meldingen">Meldingen</string>
 </resources>

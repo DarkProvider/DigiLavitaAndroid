@@ -14,7 +14,16 @@
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:id="@+id/F_container"
-			android:layout_above="@id/Navigation"/>
+			android:layout_above="@id/Navigation">
+
+<!--			<fragment-->
+<!--				android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--				android:layout_width="match_parent"-->
+<!--				android:layout_height="match_parent"-->
+<!--				design:navGraph="@navigation/nav_graph"-->
+<!--				design:defaultNavHost="true"-->
+<!--				android:id="@+id/fragmentHost" />-->
+		</FrameLayout>
 
 
 		<com.google.android.material.bottomnavigation.BottomNavigationView

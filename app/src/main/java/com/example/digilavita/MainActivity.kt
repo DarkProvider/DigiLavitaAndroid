@@ -2,8 +2,8 @@ package com.example.digilavita
 
 import android.content.Intent
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,6 +19,13 @@ class MainActivity : AppCompatActivity() {
 			//Login button calls for
 			startActivity(Intent(this, MainMenu::class.java))
 		}
+
+//		fun mysqlConnection(){
+//			ConnectionManager.connection()
+//		}
+//
+//		mysqlConnection()
 	}
+
 }
 
